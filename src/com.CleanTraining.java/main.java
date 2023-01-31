@@ -1,9 +1,10 @@
+package com.CleanTraining.java
+
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Solution {
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -27,32 +28,31 @@ public class Solution {
         int code = Integer.parseInt(codeNorm);
 
         if (code == 7441 | code == 7442 | code == 7443 | code == 7440 ) {
-            switch (code) {
-                case 7440:
-                    System.out.println("Добрый день " + section.get(0));
-                    break;
-                case 7441:
-                    System.out.println("Добрый день отдел " + section.get(1));
-                    break;
-                case 7442:
-                    System.out.println("Добрый день отдел " + section.get(2));
-                    break;
-                case 7443:
-                    System.out.println("Добрый день отдел " + section.get(3));
-                    break;
-                default:
-                    System.out.println("Ошибка ИТ");
-            }
+        switch (code) {
+        case 7440:
+        System.out.println("Добрый день " + section.get(0));
+        break;
+        case 7441:
+        System.out.println("Добрый день отдел " + section.get(1));
+        break;
+        case 7442:
+        System.out.println("Добрый день отдел " + section.get(2));
+        break;
+        case 7443:
+        System.out.println("Добрый день отдел " + section.get(3));
+        break;
+default:
+        System.out.println("Ошибка ИТ");
+        }
         }
         else {System.out.println("Пожалуйста, введите ваш пароль и название отдела БЕЗ ПРОБЕЛОВ. Пример: [5244Кухня]");
-            String defensCodeStr = scan.next();
-            String defensCode = defensCodeStr.toLowerCase(Locale.ROOT);
+        String defensCodeStr = scan.next();
+        String defensCode = defensCodeStr.toLowerCase(Locale.ROOT);
 
-            if (defensCode.equals(defensCodeArray.get(0)) || defensCode.equals(defensCodeArray.get(1)) || defensCode.equals(defensCodeArray.get(2)) || defensCode.equals(defensCodeArray.get(3))) {
-                System.out.println("Пароль принят. Добро пожаловать");}
+        if (defensCode.equals(defensCodeArray.get(0)) || defensCode.equals(defensCodeArray.get(1)) || defensCode.equals(defensCodeArray.get(2)) || defensCode.equals(defensCodeArray.get(3))) {
+        System.out.println("Пароль принят. Добро пожаловать");}
 
-            else {System.out.println("Иван Владимирович вошёл в вас");}
+        else {System.out.println("Иван Владимирович вошёл в вас");}
         }
 
-    }
-}
+        }
