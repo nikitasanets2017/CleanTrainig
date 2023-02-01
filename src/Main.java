@@ -25,7 +25,7 @@ public class Main {
             System.out.println("Пожалуйста, введите пароль");
 
             String codeStr = scan.next();
-            String codeNorm = codeStr.replaceAll("[^\\d.]", ""); //Удаляет все символы алвавита
+            String codeNorm = codeStr.replaceAll("[^\\d.]", ""); //Удаляет все символы алвавита, основа линии(^) цифры(\d)
             if (codeNorm.equals("")) {System.out.println("Пароль не содержит цифр. Закрытие программы");}
             int code = Integer.parseInt(codeNorm);
 
